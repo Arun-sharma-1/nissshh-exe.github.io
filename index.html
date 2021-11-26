@@ -26,11 +26,31 @@
       $('[data-toggle="popover"]').popover();
     });
   </script>
+<style>
+  
+  .affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+  }
 
+  .affix + .container-fluid {
+    padding-top: 70px;
+  }
+  </style>
 </head>
 
-<body style="font-family: 'Inter', sans-serif;padding-top: 55px;">
-  <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: rgb(12, 12, 12); color:white">
+<body style="font-family: 'Inter', sans-serif;padding-top:58px">
+  <div class="container-fluid" >
+      <h1 align="center">The following website is created for demonstration purpose only and has no resemblance to true case. Every image used in this demonstration is 
+        a property of respective owners </h1>
+  </div>
+  <div style=""class="alert alert-info alert-dismissible" style="align-items: center;">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    Please Register/Login to view your saved profile and track your Orders
+  </div>
+  
+  <nav data-spy="affix" data-offset-top="197" class="navbar navbar-inverse " style="background-color: rgb(12, 12, 12); color:white">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topbar">
@@ -88,10 +108,7 @@
       </div>
     </div>
   </nav>
-  <div class="alert alert-info alert-dismissible" style="align-items: center;">
-    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-    Please Register/Login to view your saved profile and track your Orders
-  </div>
+  
   <div id="register" class="modal fade" role="dialog" style="background-color: darkslategray;">
     <div class="modal-dialog">
 
@@ -472,7 +489,7 @@
     <form class="form-inline text-center">
       <div class="form-group" >
         <label for="email" ">Email address:</label>
-        <input type="email" class="form-control" id="email" style="text-align: center;font-weight:bold">
+        <input type="email" class="form-control" id="email" style="text-align: center;>
       </div>
       
       <div class="checkbox">
