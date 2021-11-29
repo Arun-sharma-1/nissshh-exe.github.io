@@ -26,28 +26,46 @@
       $('[data-toggle="popover"]').popover();
     });
   </script>
-<style>
-  
-  .affix {
-    top: 0;
-    width: 100%;
-    z-index: 9999 !important;
-  }
+  <style>
+    .affix {
+      top: 0;
+      width: 100%;
+      z-index: 9999 !important;
+    }
 
-  .affix + .container-fluid {
-    padding-top: 0px;
-  }
+    .affix+.container-fluid {
+      padding-top: 0px;
+
+      .fixed {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        top: 0;
+        z-index: 101;
+        position: -webkit-sticky;
+        position: sticky;
+      }
   </style>
+  <style>#outer{width:300px;text-align:center;margin:0 auto}
+    #cover{padding:4px 0;border:2px solid #111}
+    #da,#dt,#time{text-align:center;padding:3px}</style>
+    
+
 </head>
 
 <body style="font-family: 'Inter', sans-serif">
-  <div class="container-fluid" style="padding-top: 0px;" >
-      <h1 class="animate__animated animate__fadeIn" align="center">The following website is created for demonstration purpose only and has no resemblance to true case. Every image used in this demonstration is 
-        a property of respective owners </h1>
+  <div class="container-fluid" style="padding-top: 0px;">
+    <h1 class="animate__animated animate__fadeIn" align="center">The following website is created for demonstration
+      purpose only and has no resemblance to true case. Every image used in this demonstration is
+      a property of respective owners </h1>
   </div>
-  
-  
-  <nav data-spy="affix" data-offset-top="197" class="navbar navbar-inverse " style="background-color: rgb(12, 12, 12); color:white">
+  <div style="" class="alert alert-info alert-dismissible" style="align-items: center;">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    Please Register/Login to view your saved profile and track your Orders
+  </div>
+
+  <nav data-spy="affix" data-offset-top="197" class="navbar navbar-inverse "
+    style="background-color: rgb(12, 12, 12); color:white">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topbar">
@@ -105,10 +123,7 @@
       </div>
     </div>
   </nav>
-  <div style=""class="alert alert-info alert-dismissible" style="align-items: center;">
-    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-    Please Register/Login to view your saved profile and track your Orders
-  </div>
+
   <div id="register" class="modal fade" role="dialog" style="background-color: darkslategray;">
     <div class="modal-dialog">
 
@@ -204,7 +219,7 @@
     </div>
   </div>
   </div>
-  <div class="container-fluid">
+  <div class=" container-fluid">
     <div class="table-responsive"></div>
     <table class="table">
       <tr>
@@ -241,13 +256,20 @@
   <div class="container">
     <h4 class="animate__animated animate__fadeIn" align="center">Your One Stop Shop For All your Digital Needs
     </h4>
-
+    <script>function clock(){var date=new Date();var weekday=date.getDay();var year=date.getYear();var month=date.getMonth();var day=date.getDate();var hour=date.getHours();var minute=date.getMinutes();var second=date.getSeconds();var days=new Array ('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday' );var months=new Array('January','February','March','April','May','June','July','August','September','October','November','December');var monthname=months[month];var dayname=days[weekday];var ap;if(year<1000){year=year+1900} if(hour>=12){hour=hour-12;ap='PM'}else{ap='AM'} if(minute<10){minute='0'+minute} if(second<10){second='0'+second};
+      document.getElementById('time').innerHTML=hour+' : '+ minute +' : '+second+' ' +ap; 
+      document.getElementById('da').innerHTML=dayname;
+      document.getElementById('dt').innerHTML=monthname+' '+day+', '+year;
+      setTimeout('clock()',1000 )}window.onload=function(){clock()}
+      // Widget Code by https://karvitt.com/widgets/
+      </script>
+      <div id=outer><div class='ac b'></div><div id=cover><div id=dt></div><div id=da></div><div id=time></div></div></div>
   </div>
 </body>
 <div class="container-fluid">
   <hr>
   <h1>Shop By Brands</h1><br>
-  <table class="table table-bordered table-hover  table-responsive">
+  <table class="table table-bordered table-responsive">
     <tr>
       <td align="center"><img src="https://cdn.shopify.com/s/files/1/0301/5131/1495/files/AppleO.png?v=1581782752"><br>
         <p align="center">APPLE</p>
@@ -372,35 +394,35 @@
       </td>
     </tr>
   </table>
-  <table class="table  table-responsive">
+  <table class="table-bordered table-responsive">
     <tr>
       <td align="center">
 
         <img width="60%"
           src="https://www.reliancedigital.in/medias/Dell-INSPIRON-D560676WIN9BE-Laptops-491998786-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w2MDc2ODB8aW1hZ2UvcG5nfGltYWdlcy9oMDkvaDk2Lzk2NzczNDk3ODE1MzQucG5nfGNiODcyZjlkN2NmYjVkMGU5ZjdmMGNlMWVlYTdlN2U4OGFhODUyZGJmZjc2N2YzYTMzNjllMWUyYjE4NWU5NTU">
         <br>Dell Inspiron 15 @ INR 43990
-        </td>
+        /td>
       <td align="center">
         <img width="60%"
           src="https://www.reliancedigital.in/medias/Apple-12-Mini-Smartphones-491901546-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wxMzg3NzF8aW1hZ2UvanBlZ3xpbWFnZXMvaDU0L2gxMS85NDA3NzY3NDEyNzY2LmpwZ3w2NDVlNTAzMzBlOWZjYTQ1ZjU3N2NkNzI4MTExNmRhOWNjMWY5ZjFkNWRmMDUyYjNiODU3Nzc0MjZkMWM0ZjZj">
         <br>Apple iPhone 12 Mini 64 GB, Blue @ INR 52990
-        </td>
+      </td>
       <td align="center">
-       
+
         <img width="60%"
           src="https://www.reliancedigital.in/medias/Vega-VHDH-20-Hair-Dryers-and-Stylers-491891916-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w3NTA3MnxpbWFnZS9qcGVnfGltYWdlcy9oMjQvaDNjLzkzNzQ4MTU4NDY0MzAuanBnfDQ3ZDJjMjU3MWI4MWU5ZjEyMTEzY2EyNjNjZjQwZDA3ODU5YWI1MmNmYTgzZGFlYWUzMDUwMmFlYzc0MTFmNjQ">
-          <br>Vega VHDH-20 Hair Dryer @ INR 499
-        </td>
+        <br>Vega VHDH-20 Hair Dryer @ INR 499
+      </td>
       <td align="center">
         <img width="60%"
           src="https://www.reliancedigital.in/medias/Lifelong-Infinia-Juicer-Mixer-Grinder-492391909-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wyMzMyMTF8aW1hZ2UvanBlZ3xpbWFnZXMvaGE3L2hkMy85NjQ5NjQ4MzA0MTU4LmpwZ3wyMTRmZDRlOTJhNjQ5NWUyYjBjYzNlMzFkODY0Nzc5MDczMTg3ZjM5MTZiYmZkZjY3ZTQzOTk4YTRhYThjZTBi">
         <br>Lifelong Infinia 550 Watts Mixer Grinder, Black @ INR 999
-       
+
       </td>
       <td align="center"><img width="60%"
           src="https://www.reliancedigital.in/medias/HISENSE-43A56F-Televisions-492166307-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wzNjk0MDR8aW1hZ2UvanBlZ3xpbWFnZXMvaDljL2g0ZS85NjQ2MDY5NDgxNTAyLmpwZ3wxYTg2Zjk0OTE5NDE5NDU0ZTQ0YWRiNTNjYWNmMzUzMTNlYzI0ODE3MDI1MzQwODA0NTliYTE3OTBkODJjNDFj">
         <br>HISENSE 108 cm (43 inch) Full HD Android Smart LED TV @ INR 24999
-        
+
       </td>
     </tr>
     <tr>
@@ -412,7 +434,7 @@
           Storage Type: SSD,
           Operating system: Windows 11,
           Microsoft office included: Yes"><span class="glyphicon glyphicon-info-sign"></span></a><br>
-      
+
       </td>
       <td width="20%" align="center">
         <button class="btn btn-default" style="background-color: black;color: white;font-weight: bold;">Buy
@@ -427,7 +449,7 @@
           12 MP TrueDepth Camera,
           Face ID Enabled by TrueDepth Camera,
           Wireless Charging Compatible"><span class="glyphicon glyphicon-info-sign"></span></a><br>
-      
+
       </td>
       <td width="20%" align="center">
         <button class="btn btn-default" style="background-color: black;color: white;font-weight: bold;">Buy
@@ -450,8 +472,8 @@
       </td>
       <td width="20%" align="center">
         <button class="btn btn-default" style="background-color: black;color: white;font-weight: bold;">Buy
-        Now</button>
-      <a href="#" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Apps Supported: Netflix, Prime Video, Disney+ Hotstar, Youtube, Zee5, Sony Liv, ErosNow, JioCinema, Voot, SunNxt, YuppTV, MX Player TV, Hungama, ALTBalaji, ShemarooMe
+          Now</button>
+        <a href="#" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Apps Supported: Netflix, Prime Video, Disney+ Hotstar, Youtube, Zee5, Sony Liv, ErosNow, JioCinema, Voot, SunNxt, YuppTV, MX Player TV, Hungama, ALTBalaji, ShemarooMe
         Operating System: Android 9.0 Pie
         Resolution: Full HD Display (1920 x 1080)
         Connectivity: 2 HDMI and 2 USB Ports
@@ -476,27 +498,50 @@
             speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
         </td>
       </tr>
-  </table>
-  
+    </table>
+
   </div>
 </div>
 <div class="container-fluid">
   <img style="width:100%"
     src="https://www.reliancedigital.in/medias/V2-Desktop-Black-Friday.jpg?context=bWFzdGVyfGltYWdlc3wxMDIwMjh8aW1hZ2UvanBlZ3xpbWFnZXMvaDllL2hkOC85Njg5ODIzNTEwNTU4LmpwZ3w5ODA1YjI2YjNmYmY0ZTg2MTJiOWM1YTA1ODhhMzg4Y2RiZWIyZDdjOTBiYmJhZmM0YzU2N2ExNzJkZWI3ZTVi">
+</div>
+<hr>
+<div class="progress container" style="height: 25px;">
+  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+    aria-valuemax="100" style="width:80%;">
+    <strong> Positive Reviews (85 %)</strong>
   </div>
-  <hr>
-  <div class="container" >
-    <h3 align="center">Subscribe to our Weekly newsletter</h3><br>
-    <form class="form-inline text-center">
-      <div class="form-group" >
-        <label for="email" ">Email address:</label>
-        <input type="email" class="form-control" id="email" style="text-align: center;>
+</div>
+<div class="container">
+  <h3 align="center">Subscribe to our Weekly newsletter</h3><br>
+  <form class="form-inline text-center">
+    <div class="form-group">
+      <label for="email" ">Email address:</label>
+        <input type=" email" class="form-control" id="email" style="text-align: center;>
       </div>
       
-      <div class="checkbox">
+      <div class=" checkbox">
         <label><input type="checkbox">Accept Term and Conditions</label>
-      </div>
-      <button type="submit" class="btn btn-default" style="background-color: darkblue;color: white;font-weight: bolder;">Submit</button>
-    </form>
+    </div>
+    <button type="submit" class="btn btn-default"
+      style="background-color: darkblue;color: white;font-weight: bolder;">Submit</button>
+  </form>
+</div>
+<br>
+<div class="container-fluid" style="background-color:black;color:whitesmoke">
+
+  <div style="text-align:right;">
+    <div style="min-height:360px;">
+      <div style="width:100%;height:0;padding-bottom:50%;position:relative;"><iframe
+          style="border:none;position:absolute;top:0;left:0;width:100%;height:100%;min-height:360px;border:none;overflow:hidden !important;"
+          src="https://www.metercustom.net/plugin/"></iframe></div>
+    
   </div>
-    </html>
+</div>
+
+</div>
+
+</body>
+
+</html>
