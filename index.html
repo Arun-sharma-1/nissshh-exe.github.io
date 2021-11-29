@@ -1,0 +1,523 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <link rel="icon"
+    href="https://icon-icons.com/downloadimage.php?id=112278&root=1706/ICO/512/&file=3986701-online-shop-store-store-icon_112278.ico"
+    type="image/icon type">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+  <title>DigiShop India</title>
+  <script>
+    $(document).ready(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('[data-toggle="popover"]').popover();
+    });
+  </script>
+<style>
+  
+  .affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+  }
+
+  .affix + .container-fluid {
+    padding-top: 0px;
+    .fixed{
+margin: 0;
+    padding: 0;
+    width: 100%;
+    top: 0;
+    z-index: 101;
+    position: -webkit-sticky;
+    position: sticky;
+}
+
+  </style>
+  
+</head>
+
+<body style="font-family: 'Inter', sans-serif">
+  <div class="container-fluid" style="padding-top: 0px;" >
+      <h1 class="animate__animated animate__fadeIn" align="center">The following website is created for demonstration purpose only and has no resemblance to true case. Every image used in this demonstration is 
+        a property of respective owners </h1>
+  </div>
+  <div style=""class="alert alert-info alert-dismissible" style="align-items: center;">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    Please Register/Login to view your saved profile and track your Orders
+  </div>
+  
+  <nav data-spy="affix" data-offset-top="197" class="navbar navbar-inverse " style="background-color: rgb(12, 12, 12); color:white">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><strong>Digishop | India</strong></a>
+        <img class="navbar-brand"
+          src="https://icon-icons.com/downloadimage.php?id=112278&root=1706/ICO/512/&file=3986701-online-shop-store-store-icon_112278.ico">
+      </div>
+      <div class="collapse navbar-collapse" id="topbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#"><b>H O M E</b></a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><b>C A T E G O R I E S
+              </b><span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Smartphones</a></li>
+              <li><a href="#">Kitchen Appliances</a></li>
+              <li><a href="#">Home Appliances</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><b>S E R V I C E</b>
+              <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#"><span class="glyphicon glyphicon-earphone"></span>+91-7519874444</a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> nissshh@icloud.com</a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-send"></span> AS-006-0406, Pohra
+                  Mohalla,<br>Shahpur,Aurangabad,Bihar-824101,India</a></li>
+
+            </ul>
+          </li>
+          <li><a href="#" data-toggle="tooltip" title="You need to Login to track your order"
+              data-placement="bottom"><b>Track Your Order</b></a></li>
+
+
+        </ul>
+        <form class="navbar-form navbar-right">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search....." name="search">
+          </div>
+          <button type="submit" class="btn btn-success">Go</span></button>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <div class="btn-group">
+            <button style="background-color: tan;color:white" type="button" class="btn navbar-btn" data-toggle="modal"
+              data-target="#register"><span class="glyphicon glyphicon-paperclip"></span> REGISTER</button>
+
+            <button style="background-color: teal;color:white" type="button" class="btn  navbar-btn" data-toggle="modal"
+              data-target="#login"><span class="glyphicon glyphicon-user"></span> LOGIN</button>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div id="register" class="modal fade" role="dialog" style="background-color: darkslategray;">
+    <div class="modal-dialog">
+
+
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" align="center">REGISTER</h4>
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="name">Name:</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="name" placeholder="Enter Your Name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="email">Email:</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="email" placeholder="Enter email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="phone"> Phone</label>
+              <div class="col-sm-10">
+                <input type="number" class="form-control" id="email" placeholder="Mobile Number">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="pwd">Password:</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="pwd">Confirm Password:</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password Again">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                  <label><input type="checkbox"> Accept Terms and Conditions </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn"
+                  style="background-color: forestgreen;color: ghostwhite;">Register</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div id="login" class="modal fade" role="dialog" style="background-color: indigo;">
+    <div class="modal-dialog">
+
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" align="center">LOGIN</h4>
+        </div>
+        <div class="modal-body">
+          <form class="form-horizonatl">
+            <div class="form-group">
+              <label for="email">Email address:</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Password:</label>
+              <input type="password" class="form-control" id="pwd">
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox"> Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-success">Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+  <div class=" container-fluid" >
+    <div class="table-responsive"></div>
+    <table class="table">
+      <tr>
+        <td align="left" style="width:20%">
+          <br>
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_x2lzmtdl.json" background="transparent"
+            speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+        </td>
+        <td align="left" style="width:60%">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+
+          <h1 class="animate__animated animate__slideinUp" align="center" style="font-size: 600%;">
+            <strong>DIGISHOP</strong><sup>india</sup></h1>
+        </td>
+        <td align="left" style="width:20%">
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_pvi5pi9w.json" background="transparent"
+            speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+        </td>
+      </tr>
+    </table>
+
+
+  </div>
+  <hr>
+
+  </div>
+  </div>
+  <div class="container">
+    <h4 class="animate__animated animate__fadeIn" align="center">Your One Stop Shop For All your Digital Needs
+    </h4>
+
+  </div>
+</body>
+<div class="container-fluid">
+  <hr>
+  <h1>Shop By Brands</h1><br>
+  <table class="table table-bordered table-responsive" >
+    <tr>
+      <td align="center"><img src="https://cdn.shopify.com/s/files/1/0301/5131/1495/files/AppleO.png?v=1581782752"><br>
+        <p align="center">APPLE</p>
+      </td>
+      <td align="center" ><img src="https://cdn.shopify.com/s/files/1/0301/5131/1495/files/MiO.png?v=1581782756">
+        <p align="center">XIAOMI</p>
+      </td>
+      <td align="center"><img src="https://cdn.shopify.com/s/files/1/0301/5131/1495/files/SamsungO.png?v=1581782757">
+        <p align="center">SAMSUNG</p>
+      </td>
+      <td align="center"><img src="https://cdn.shopify.com/s/files/1/0301/5131/1495/files/SonyO.png?v=1581782758">
+        <p align="center">SONY</p>
+      </td>
+      <td align="center"><img src="https://cdn.shopify.com/s/files/1/0301/5131/1495/files/realmeO.png?v=1584436133">
+        <p align="center">REALME</p>
+      </td>
+      <td align="center"><img src="https://cdn.shopify.com/s/files/1/0301/5131/1495/files/OneO.png?v=1581782757">
+        <p align="center">ONEPLUS</p>
+      </td>
+    </tr>
+  </table>
+</div>
+<hr>
+<div class="container-fluid">
+  <table class="table  table-responsive">
+    <tr>
+      <td style="width:10%" align="right">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player src="https://assets3.lottiefiles.com/temp/lf20_UguT0F.json" background="transparent" speed="1"
+          style="width:200px; height: 200px;" hover loop autoplay></lottie-player>
+      </td>
+      <td align="left"><br><br><br>
+        <h1><b>Featured Products</b></h1>
+      </td>
+    </tr>
+  </table>
+
+  <div id="offer" class="carousel slide" data-ride="carousel">
+
+    <ol class="carousel-indicators">
+      <li data-target="#offer" data-slide-to="0" class="active"></li>
+      <li data-target="#offer" data-slide-to="1"></li>
+      <li data-target="#offer" data-slide-to="2"></li>
+      <li data-target="#offer" data-slide-to="3"></li>
+    </ol>
+
+
+    <div class="carousel-inner">
+      <div class="item active">
+        <img style="width: 100%;"
+          src="https://www.reliancedigital.in/medias/Small-Appliances-Carousel-Banner-08-11-2021.jpg?context=bWFzdGVyfGltYWdlc3w3OTA1MXxpbWFnZS9qcGVnfGltYWdlcy9oNDkvaGE5Lzk2NzczNzkzMzgyNzAuanBnfGI5ZGFkYzA4MzQ5NjUyOTZjN2NiMjZlNGY1ZTM1MzA1ZmJlOWI2NWQ2YzVmZmRjNjQ1MzZkNjNjYzViZmFjZDA">
+      </div>
+
+      <div class="item">
+        <img style="width: 100%;"
+          src="https://www.reliancedigital.in/medias/True-Wireless-Carousel-Banner-08-11-2021.jpg?context=bWFzdGVyfGltYWdlc3w1NTY5OHxpbWFnZS9qcGVnfGltYWdlcy9oMzcvaGQyLzk2NzczNzg5NDUwNTQuanBnfGQ3ODcxOWIxZDBmM2IyNzAwYzBkODU1YTg3YjQzYzlhNjdjNGMyZmVkZTlhYTZhOTEzMzI5NjEwODhlZTcxYTg">
+      </div>
+
+      <div class="item">
+        <img style="width: 100%;"
+          src="https://www.reliancedigital.in/medias/Tab-Carousel-Banner-08-11-2021.jpg?context=bWFzdGVyfGltYWdlc3w2NTgwNHxpbWFnZS9qcGVnfGltYWdlcy9oNDEvaDE1Lzk2NzczNzkyMDcxOTguanBnfDkxNDEzZWE1NWY1MjAzZjU5ZTgzMzEyMjkxNjlmOWU5M2MzNjQzMDI3OGE2NzRkYWFkYjI0ZmYzZjRmOWY0OTM">
+      </div>
+      <div class="item">
+        <img style="width: 100%;"
+          src="https://www.reliancedigital.in/medias/WM-Carousel-Banner-08-11-2021.jpg?context=bWFzdGVyfGltYWdlc3w3ODA4OXxpbWFnZS9qcGVnfGltYWdlcy9oNzMvaGY1Lzk2NzczNzg2ODI5MTAuanBnfGM2YWI5ZDJiOGU0MzU2Njc1NmVlNGZjMjZkYTE3NzEwZDE2Y2MzMGRkNDE1MTAxMDcyZGFhMGRmNGQ2MzhhZGY">
+      </div>
+    </div>
+
+
+    <a class="left carousel-control" href="#offer" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#offer" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<hr>
+
+<div class="container-fluid">
+  <table class="table  table-responsive" style="width: 100%;">
+    <tr>
+      <td width="10%">
+        <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_mrc7imzl.json" background="transparent"
+          speed="1" style="width: 300px; height: 300px;" hover loop autoplay></lottie-player>
+      </td>
+      <td width="90%">
+        <h1>Flexible Payment Options</h1>
+        <br>
+        <table class="table  table-responsive" style="width: 100%;">
+          <tr>
+            <td width="15%">
+              <lottie-player src="https://assets5.lottiefiles.com/temp/lf20_EqtckR.json" background="transparent"
+                speed="1" style="width: 150; height: 150;" loop autoplay></lottie-player>Cash On Delivery
+            </td>
+            <td width="15%">
+              <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_skp3cunb.json" background="transparent"
+                speed="1" style="width: 150; height: 150;" hover loop autoplay></lottie-player>Debit/Credit Card
+            </td>
+            <td width="15%">
+              <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_ystsffqy.json" background="transparent"
+                speed="1" style="width: 150; height: 150;" loop autoplay></lottie-player>Easy Finance
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+<hr>
+<div class="container-fluid" style="border: 2px solid black">
+  <table class="table">
+    <tr>
+      <td width="10%">
+        <lottie-player src="https://assets7.lottiefiles.com/private_files/lf30_eyclxhbf.json" background="transparent"
+          speed="1" style="width: 100; height: 100;" hover loop autoplay></lottie-player>
+      </td>
+      <td width=90%>
+        <h1><b>Deals You Can't Miss !</b></h1>
+      </td>
+    </tr>
+  </table>
+  <table class="table-bordered table-responsive">
+    <tr>
+      <td align="center">
+
+        <img width="60%"
+          src="https://www.reliancedigital.in/medias/Dell-INSPIRON-D560676WIN9BE-Laptops-491998786-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w2MDc2ODB8aW1hZ2UvcG5nfGltYWdlcy9oMDkvaDk2Lzk2NzczNDk3ODE1MzQucG5nfGNiODcyZjlkN2NmYjVkMGU5ZjdmMGNlMWVlYTdlN2U4OGFhODUyZGJmZjc2N2YzYTMzNjllMWUyYjE4NWU5NTU">
+        <br>Dell Inspiron 15 @ INR 43990
+        /td>
+      <td align="center">
+        <img width="60%"
+          src="https://www.reliancedigital.in/medias/Apple-12-Mini-Smartphones-491901546-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wxMzg3NzF8aW1hZ2UvanBlZ3xpbWFnZXMvaDU0L2gxMS85NDA3NzY3NDEyNzY2LmpwZ3w2NDVlNTAzMzBlOWZjYTQ1ZjU3N2NkNzI4MTExNmRhOWNjMWY5ZjFkNWRmMDUyYjNiODU3Nzc0MjZkMWM0ZjZj">
+        <br>Apple iPhone 12 Mini 64 GB, Blue @ INR 52990
+        </td>
+      <td align="center">
+       
+        <img width="60%"
+          src="https://www.reliancedigital.in/medias/Vega-VHDH-20-Hair-Dryers-and-Stylers-491891916-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w3NTA3MnxpbWFnZS9qcGVnfGltYWdlcy9oMjQvaDNjLzkzNzQ4MTU4NDY0MzAuanBnfDQ3ZDJjMjU3MWI4MWU5ZjEyMTEzY2EyNjNjZjQwZDA3ODU5YWI1MmNmYTgzZGFlYWUzMDUwMmFlYzc0MTFmNjQ">
+          <br>Vega VHDH-20 Hair Dryer @ INR 499
+        </td>
+      <td align="center">
+        <img width="60%"
+          src="https://www.reliancedigital.in/medias/Lifelong-Infinia-Juicer-Mixer-Grinder-492391909-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wyMzMyMTF8aW1hZ2UvanBlZ3xpbWFnZXMvaGE3L2hkMy85NjQ5NjQ4MzA0MTU4LmpwZ3wyMTRmZDRlOTJhNjQ5NWUyYjBjYzNlMzFkODY0Nzc5MDczMTg3ZjM5MTZiYmZkZjY3ZTQzOTk4YTRhYThjZTBi">
+        <br>Lifelong Infinia 550 Watts Mixer Grinder, Black @ INR 999
+       
+      </td>
+      <td align="center"><img width="60%"
+          src="https://www.reliancedigital.in/medias/HISENSE-43A56F-Televisions-492166307-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wzNjk0MDR8aW1hZ2UvanBlZ3xpbWFnZXMvaDljL2g0ZS85NjQ2MDY5NDgxNTAyLmpwZ3wxYTg2Zjk0OTE5NDE5NDU0ZTQ0YWRiNTNjYWNmMzUzMTNlYzI0ODE3MDI1MzQwODA0NTliYTE3OTBkODJjNDFj">
+        <br>HISENSE 108 cm (43 inch) Full HD Android Smart LED TV @ INR 24999
+        
+      </td>
+    </tr>
+    <tr>
+      <td width="20%" align="center">
+        <button class="btn btn-default" style="background-color: black;color: white;font-weight: bold;">Buy
+          Now</button> <a href="#" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="10th Gen Intel Core i5-10210U Processor,
+          RAM: 8GB,
+          Internal Storage : 512GB,
+          Storage Type: SSD,
+          Operating system: Windows 11,
+          Microsoft office included: Yes"><span class="glyphicon glyphicon-info-sign"></span></a><br>
+      
+      </td>
+      <td width="20%" align="center">
+        <button class="btn btn-default" style="background-color: black;color: white;font-weight: bold;">Buy
+          Now</button>
+        <a href="#" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Super Retina XDR Display,
+          5G Enabled Phone,
+          All‑screen OLED Display,
+          Fingerprint-resistant Oleophobic Coating Screen,
+          Rated IP68 Splash, Water and Dust Resistant,
+          A14 Bionic Chip,
+          Dual 12 MP Camera System: Ultra Wide and Wide Cameras
+          12 MP TrueDepth Camera,
+          Face ID Enabled by TrueDepth Camera,
+          Wireless Charging Compatible"><span class="glyphicon glyphicon-info-sign"></span></a><br>
+      
+      </td>
+      <td width="20%" align="center">
+        <button class="btn btn-default" style="background-color: black;color: white;font-weight: bold;">Buy
+          Now</button>
+        <a href="#" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Quick Dry With 1000W,
+          2 Heat/Speed Settings - Low And High,
+          Safety Automatic Overheat Cut-Out,
+          Foldable Handle,
+          2 Years Manufacturer Warranty"><span class="glyphicon glyphicon-info-sign"></span></a><br>
+      </td>
+      <td width="20%" align="center">
+        <button class="btn btn-default" style="background-color: black;color: white;font-weight: bold;">Buy
+          Now</button>
+        <a href="#" data-toggle="popover" data-placement="top" data-trigger="hover"
+          data-content="500 W : Higher the Wattage, Tougher the Juicing/Grinding
+          Suitable for: Wet Grinding, Chutney Grinding, Grating, Mincing, Dry Grinding, Blending
+          Overload Protection- feature protects the motor from damage when the jars are overfilled or when the appliance is overused
+          3-Speed Operation- You can grind and blend the ingredients easily by gradually increasing the speed, without overloading the system"><span
+            class="glyphicon glyphicon-info-sign"></span></a><br>
+      </td>
+      <td width="20%" align="center">
+        <button class="btn btn-default" style="background-color: black;color: white;font-weight: bold;">Buy
+        Now</button>
+      <a href="#" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Apps Supported: Netflix, Prime Video, Disney+ Hotstar, Youtube, Zee5, Sony Liv, ErosNow, JioCinema, Voot, SunNxt, YuppTV, MX Player TV, Hungama, ALTBalaji, ShemarooMe
+        Operating System: Android 9.0 Pie
+        Resolution: Full HD Display (1920 x 1080)
+        Connectivity: 2 HDMI and 2 USB Ports
+        Sound: 20 Watts Speaker
+        Refresh Rate: 60 Hz"><span class="glyphicon glyphicon-info-sign"></span></a><br></td>
+    </tr>
+  </table>
+</div>
+<br>
+<hr>
+<div class="container-fluid" style="align-content: center;align-items: center;border: 2px solid rgb(49, 7, 128)">
+  <h1 align="center"><b>Student and Corporate Offers</b></h1>
+  <div class="container">
+    <table>
+      <tr>
+        <td>
+          <h4 align="center">Sign up and Upload Your Student ID / Corporate ID for additional discount from our
+            partnered brands.</h4>
+        </td>
+        <td>
+          <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_rqaycnwn.json" background="transparent"
+            speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+        </td>
+      </tr>
+  </table>
+  
+  </div>
+</div>
+<div class="container-fluid">
+  <img style="width:100%"
+    src="https://www.reliancedigital.in/medias/V2-Desktop-Black-Friday.jpg?context=bWFzdGVyfGltYWdlc3wxMDIwMjh8aW1hZ2UvanBlZ3xpbWFnZXMvaDllL2hkOC85Njg5ODIzNTEwNTU4LmpwZ3w5ODA1YjI2YjNmYmY0ZTg2MTJiOWM1YTA1ODhhMzg4Y2RiZWIyZDdjOTBiYmJhZmM0YzU2N2ExNzJkZWI3ZTVi">
+  </div>
+  <hr>
+  <div class="progress container">
+    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="85"
+    aria-valuemin="0" aria-valuemax="100" style="width:80%">
+    <strong>  Positive Reviews (85 %)</strong>
+    </div>
+  </div>
+  <div class="container" >
+    <h3 align="center">Subscribe to our Weekly newsletter</h3><br>
+    <form class="form-inline text-center">
+      <div class="form-group" >
+        <label for="email" ">Email address:</label>
+        <input type="email" class="form-control" id="email" style="text-align: center;>
+      </div>
+      
+      <div class="checkbox">
+        <label><input type="checkbox">Accept Term and Conditions</label>
+      </div>
+      <button type="submit" class="btn btn-default" style="background-color: darkblue;color: white;font-weight: bolder;">Submit</button>
+    </form>
+  </div>
+<br>
+<div class="container-fluid" style="background-color:black;color:whitesmoke">
+    
+</div>
+</body>
+    </html>
