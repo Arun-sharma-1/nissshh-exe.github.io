@@ -1,25 +1,25 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-      
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
-  <link rel="icon"
-  href="https://iconarchive.com/download/i43789/itzikgur/my-seven/Girls-Blue-Dress.ico"
-  type="image/icon type">
-  
+  <link rel="icon" href="https://iconarchive.com/download/i43789/itzikgur/my-seven/Girls-Blue-Dress.ico"
+    type="image/icon type">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <script src="https://kit.fontawesome.com/19286165aa.js" crossorigin="anonymous"></script>
-<title>
-   DanceLine
-</title>
-<script>
+  <title>
+    DanceLine
+  </title>
+  <script>
     $(document).ready(function () {
       $('[data-toggle="tooltip"]').tooltip();
     });
@@ -30,7 +30,6 @@
     });
   </script>
   <style>
-    
     .affix {
       top: 0;
       width: 100%;
@@ -49,31 +48,99 @@
         position: -webkit-sticky;
         position: sticky;
       }
-      
-}
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
 
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
   </style>
- 
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .card {
+      float: left;
+      width: 33.3%;
+      padding: 8px;
+      border-radius: 10px;
+    }
+
+
+    .price {
+      list-style-type: none;
+      border: 1px solid #eee;
+      margin: 0;
+      padding: 0;
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+    }
+
+
+    .price .header {
+      background-color: #111;
+      color: white;
+      font-size: 25px;
+      font-weight: bolder;
+    }
+
+
+    .price li {
+      border-bottom: 1px solid #eee;
+      padding: 20px;
+      text-align: center;
+
+    }
+
+
+
+
+    .price .grey {
+      background-color: #eee;
+      font-size: 30px;
+      font-weight: bolder;
+    }
+
+    .price .white {
+      background-color: transparent;
+      font-size: 20px;
+      color: white;
+    }
+
+    .price:hover {
+      box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+      transform: scale(1.2);
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+
+
+
+    }
+  </style>
+
 </head>
-<body style="height:100%;width:100%;font-family: 'Inter', sans-serif; background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); background-size: 400% 400%; animation: gradient 15s ease infinite;">
-    <div class="container-fluid" style="padding-top: 0px;background-color: white;">
-        <h1 class="animate__animated animate__fadeIn" align="center">The following website is created for demonstration
-          purpose only and has no resemblance to true case. Every image used in this demonstration is
-          a property of respective owners </h1>
-      </div>
-      
-    <nav data-spy="affix" data-offset-top="197" class="navbar navbar-inverse "
+
+<body
+  style="height:100%;width:100%;font-family: 'Inter', sans-serif; background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); background-size: 400% 400%; animation: gradient 15s ease infinite;">
+  <div class="container-fluid" style="padding-top: 0px;background-color: white;">
+    <h1 class="animate__animated animate__fadeIn" align="center">The following website is created for demonstration
+      purpose only and has no resemblance to true case. Every image used in this demonstration is
+      a property of respective owners </h1>
+  </div>
+
+  <nav data-spy="affix" data-offset-top="197" class="navbar navbar-inverse "
     style="background-color: rgb(12, 12, 12); color:white">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -83,19 +150,18 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="#"><strong>D A N C E L I N E</strong></a>
-        <img class="navbar-brand"
-          src="https://www.nicepng.com/png/full/1-16687_star-png.png">
+        <img class="navbar-brand" src="https://www.nicepng.com/png/full/1-16687_star-png.png">
       </div>
       <div class="collapse navbar-collapse" id="topbar">
         <ul class="nav navbar-nav">
           <li class="active"><a href="#"><b>A B O U T</b></a></li>
           <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><b>C A T E G O R I E S
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#category"><b>C A T E G O R I E S
               </b><span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="#">Western</a></li>
               <li><a href="#">Traditional</a></li>
-             
+
             </ul>
           </li>
           <li class="dropdown">
@@ -109,14 +175,16 @@
 
             </ul>
           </li>
-          <li><a href="#" data-toggle="tooltip" title="Please Login To View Your Profile"
-              data-placement="bottom"><b>P R O F I L E</b></a></li>
-        </ul>   
+          <li><a href="#" data-toggle="tooltip" title="Please Login To View Your Profile" data-placement="bottom"><b>P R
+                O F I L E</b></a></li>
+        </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="#register"  data-toggle="modal" data-target="#register" ><span class="glyphicon glyphicon-user"></span> <b>R E G I S T E R </b></a></li>
-            <li><a href="#login" data-toggle="modal" data-target="#login"><span class="glyphicon glyphicon-log-in"></span> <b>L O G I N</b></a></li>
-      
-        </ul>     
+          <li><a href="#register" data-toggle="modal" data-target="#register"><span
+                class="glyphicon glyphicon-user"></span> <b>R E G I S T E R </b></a></li>
+          <li><a href="#login" data-toggle="modal" data-target="#login"><span class="glyphicon glyphicon-log-in"></span>
+              <b>L O G I N</b></a></li>
+
+        </ul>
   </nav>
   <div id="login" class="modal fade" role="dialog" style="background-color:transparent;">
     <div class="modal-dialog modal-dialog-centered modal-md">
@@ -128,11 +196,12 @@
         </div>
         <div class="modal-body">
           <style>
-            
+
           </style>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" style="background-color: black;color:white;font-weight: bolder;" data-dismiss="modal">GO BACK</button>
+          <button type="button" class="btn btn-default" style="background-color: black;color:white;font-weight: bolder;"
+            data-dismiss="modal">GO BACK</button>
         </div>
       </div>
 
@@ -150,15 +219,18 @@
         <div class="modal-body">
           <table class="table table-responsive">
             <tr>
-              <td><img src="https://images.unsplash.com/photo-1547153760-18fc86324498?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFuY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"></td>
+              <td><img
+                  src="https://images.unsplash.com/photo-1547153760-18fc86324498?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFuY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60">
+              </td>
               <td>
-                
+
               </td>
             </tr>
-         </table>
+          </table>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" style="background-color: black;color:white;font-weight: bolder;" data-dismiss="modal">GO BACK</button>
+          <button type="button" class="btn btn-default" style="background-color: black;color:white;font-weight: bolder;"
+            data-dismiss="modal">GO BACK</button>
         </div>
       </div>
 
@@ -171,9 +243,9 @@
       <tr>
         <td align="left" style="width:20%">
           <br>
-          
-          <lottie-player src="https://assets7.lottiefiles.com/datafiles/40aX5db74VvGPWw/data.json" background="transparent"
-            speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+
+          <lottie-player src="https://assets7.lottiefiles.com/datafiles/40aX5db74VvGPWw/data.json"
+            background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
         </td>
         <td align="left" style="width:60%">
           <br>
@@ -200,29 +272,49 @@
     <h3 class="animate__animated animate__fadeIn" align="center" style="color:white">Online Dance Academy </h3>
   </div>
 
-  <div class="container-fluid">
+  <div class="container-fluid" id="category">
     <hr>
     <h1 style="color:white"><span class="glyphicon glyphicon-film"></span>&nbspChoose Your Genre</h1><br>
+    <style>
+      .zoomt{
+        transform: scale(0.8);
+        filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+      }
+      .zoomt:hover{
+       ;
+        filter: none;
+    -webkit-filter: grayscale(0);
+    transition: 0.3s;
+    transform: scale(1.0)
+      }
+    </style>
     <h2 style="color:white" align="center">[ W E S T E R N ]</h2><br>
     <table class="table table-bordered table-responsive">
       <tr>
-        <td class="zoom" align="center"><img style="width:100%" class="img " src="https://global-uploads.webflow.com/5dbb40d6d8c97447e9450447/60baaab0aa12e6d6ad9074b6_STEEZY_HIPHOP-min.jpg"><br>
-          <p align="center" style="color:white" ><b>H I P - H O P </b></p>
+        <td class="zoom" align="center"><img style="width:100%" class="img zoomt"
+            src="https://global-uploads.webflow.com/5dbb40d6d8c97447e9450447/60baaab0aa12e6d6ad9074b6_STEEZY_HIPHOP-min.jpg"><br>
+          <p align="center" style="color:white"><b>H I P - H O P </b></p>
         </td>
-        <td align="center"><img style="width:100%" class="img" src="https://global-uploads.webflow.com/5dbb40d6d8c97447e9450447/60baaab0f8caa4145fe07fef_STEEZY_JAZZ-min.jpg">
-          <p align="center"  style="color:white"><b>J A Z Z</b></p>
+        <td align="center"><img style="width:100%" class="img zoomt"
+            src="https://global-uploads.webflow.com/5dbb40d6d8c97447e9450447/60baaab0f8caa4145fe07fef_STEEZY_JAZZ-min.jpg">
+          <p align="center" style="color:white"><b>J A Z Z</b></p>
         </td>
-        <td align="center"><img style="width:100%" class="img " src="https://global-uploads.webflow.com/5dbb40d6d8c97447e9450447/60baaab004cd38de543dd7a1_STEEZY_BALLET-min.jpg">
+        <td align="center"><img style="width:100%" class="img zoomt"
+            src="https://global-uploads.webflow.com/5dbb40d6d8c97447e9450447/60baaab004cd38de543dd7a1_STEEZY_BALLET-min.jpg">
           <p align="center" style="color:white"><b>B A L L E T</b></p>
         </td>
-        <td align="center"><img style="width:100%" class="img " src="https://global-uploads.webflow.com/5dbb40d6d8c97447e9450447/60baaab0707f8ffece1e0ea3_STEEZY_POPPING-min.jpg">
-          <p align="center"  style="color:white"><b>P O P P I N G</b></p>
+        <td align="center"><img style="width:100%" class="img zoomt"
+            src="https://global-uploads.webflow.com/5dbb40d6d8c97447e9450447/60baaab0707f8ffece1e0ea3_STEEZY_POPPING-min.jpg">
+          <p align="center" style="color:white"><b>P O P P I N G</b></p>
         </td>
-        <td align="center"><img  style="width:100%" class="img " src="https://global-uploads.webflow.com/5dbb40d6d8c97447e9450447/615e128e6cd629d07d38baf1_SALSA_CATEGORY_THUMB-min.jpg">
-          <p align="center"  style="color:white"><b>S A L S A</b></p>
+        <td align="center"><img style="width:100%" class="img zoomt"
+            src="https://global-uploads.webflow.com/5dbb40d6d8c97447e9450447/615e128e6cd629d07d38baf1_SALSA_CATEGORY_THUMB-min.jpg">
+          <p align="center" style="color:white"><b>S A L S A</b></p>
         </td>
-        <td align="center"><img style="width:100%" class="img" src="https://global-uploads.webflow.com/5dbb40d6d8c97447e9450447/60baaab0aa12e68aa29074b7_STEEZY_CONTEMP-min.jpg">
-          <p align="center"  style="color:white"><b>C O N T E M P O R A R Y</b></p>
+        <td align="center"><img style="width:100%" class="img zoomt"
+            src="https://global-uploads.webflow.com/5dbb40d6d8c97447e9450447/60baaab0aa12e68aa29074b7_STEEZY_CONTEMP-min.jpg">
+          <p align="center" style="color:white"><b>C O N T E M P O R A R Y</b></p>
         </td>
       </tr>
     </table>
@@ -230,130 +322,206 @@
     <h2 style="color:white" align="center">[ C L A S S I C A L ]</h2><br>
     <table class="table table-bordered table-responsive">
       <tr>
-        <td class="zoom" align="center"><img style="width:100%" class="img " src="https://cdn.britannica.com/q:60/92/189592-050-5023ACF5/dancer-dance-natyam-Indian-Bharata.jpg"><br>
-          <p align="center" style="color:white" ><b>B H A R A T N A T Y A M </b></p>
+        <td class="zoom" align="center">
+          <p align="center" style="color:white;font-size:200%"><b>B H A R A T N A T Y A M </b></p>
+          <img style="width:100%" class="img zoomt"
+            src="https://cdn.britannica.com/q:60/92/189592-050-5023ACF5/dancer-dance-natyam-Indian-Bharata.jpg"><br>
+          
         </td>
-        <td align="center"><img style="width:100%" class="img" src="https://cdn.britannica.com/q:60/53/162553-050-38A6F40C/Dancer-performance-dance-India.jpg">
-          <p align="center"  style="color:white"><b>K A T H A K A L I </b></p>
+        <td align="center"><p align="center" style="color:white;font-size:200%"><b>K A T H A K A L I </b></p><img style="width:100%" class="img zoomt"
+            src="https://cdn.britannica.com/q:60/53/162553-050-38A6F40C/Dancer-performance-dance-India.jpg">
+          
         </td>
-        <td align="center"><img style="width:100%" class="img " src="https://cdn.britannica.com/q:60/89/162489-050-E1E1C90F/Dancer-Indian-odissi-dance.jpg">
-          <p align="center" style="color:white"><b>O D I S S I</b></p>
+        <td align="center"><p align="center" style="color:white;font-size:200%"><b>O D I S S I</b></p><img style="width:100%" class="img zoomt"
+            src="https://cdn.britannica.com/q:60/89/162489-050-E1E1C90F/Dancer-Indian-odissi-dance.jpg">
+          
         </td>
-        
+
       </tr>
     </table>
   </div>
-</div>
-</div>
-<div class="container">
-  <h1 align="center" style="color:white"><i class="fas fa-angle-double-right"></i> Choose a Subscription Plan As per Your Choice <i class="fas fa-angle-double-left"></i></h1>
+  </div>
+  </div>
+  <div class="container">
+    <h1 align="center" style="color:white"><i class="fas fa-angle-double-right"></i> Choose a Subscription Plan As per
+      Your Choice <i class="fas fa-angle-double-left"></i></h1>
+    <hr>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .card {
+        float: left;
+        width: 33.3%;
+        padding: 8px;
+        border-radius: 10px;
+      }
+
+
+      .price {
+        list-style-type: none;
+        border: 1px solid #eee;
+        margin: 0;
+        padding: 0;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+      }
+
+
+      .price .header {
+        background-color: #111;
+        color: white;
+        font-size: 25px;
+        font-weight: bolder;
+      }
+
+
+      .price li {
+        border-bottom: 1px solid #eee;
+        padding: 20px;
+        text-align: center;
+
+      }
+
+
+
+
+      .price .grey {
+        background-color: #eee;
+        font-size: 30px;
+        font-weight: bolder;
+      }
+
+      .price .white {
+        background-color: transparent;
+        font-size: 20px;
+        color: white;
+      }
+
+      .price:hover {
+        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+        transform: scale(1.2);
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+
+
+
+      }
+    </style>
+    <div class="card">
+      <ul class="price">
+        <li class="header">B A S I C</li>
+        <li class="grey">INR 129/month</li>
+        <li class="white">TUTORIAL VIDEOS<span class="glyphicon glyphicon-ok" style="color:greenyellow"></li>
+        <li class="white">PERSONALISED MENTOR SUPPORT<span class="glyphicon glyphicon-ok" style="color:greenyellow">
+        </li>
+        </li>
+        <li class="white">CELEBRITY TALKS</li>
+        <li class="white">AFTER COURSE CAREER SUPPORT</li>
+        <li class="grey"><button class="btn btn-md" style="background-color:black;color:white;font-weight:bolder">S U B
+            S C R I B E</button></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <ul class="price">
+        <li class="header">P L U S</li>
+        <li class="grey">INR 599/month</li>
+        <li class="white">TUTORIAL VIDEOS<span class="glyphicon glyphicon-ok" style="color:greenyellow"></li>
+        <li class="white">PERSONALISED MENTOR SUPPORT<span class="glyphicon glyphicon-ok" style="color:greenyellow">
+        </li>
+        </li>
+        <li class="white">CELEBRITY TALKS<span class="glyphicon glyphicon-ok" style="color:greenyellow"></li>
+        </li>
+        <li class="white">AFTER COURSE CAREER SUPPORT</li>
+
+        <li class="grey"><button class="btn btn-md" style="background-color:black;color:white;font-weight:bolder">S U B
+            S C R I B E</button></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <ul class="price">
+        <li class="header">P R E M I U M</span></li>
+        <li class="grey">INR 999/month</span></li>
+        <li class="white">TUTORIAL VIDEOS <span class="glyphicon glyphicon-ok" style="color:greenyellow"></li>
+        <li class="white">PERSONALISED MENTOR SUPPORT<span class="glyphicon glyphicon-ok"
+            style="color:greenyellow"></span></li>
+        <li class="white">CELEBRITY TALKS<span class="glyphicon glyphicon-ok" style="color:greenyellow"></span></li>
+        <li class="white">AFTER COURSE CAREER SUPPORT<span class="glyphicon glyphicon-ok"
+            style="color:greenyellow"></span></li>
+        <li class="grey"><button class="btn" style="background-color:black;color:white;font-weight:bolder">S U B S C R I
+            B E</button></li>
+      </ul>
+    </div>
+
+  </div>
+  <br>
+  <div class="container">
+    <h1 align="center" style="color: white;"">[OUR TUTORS]</h1>
   <hr>
   <style>
-  * {
-    box-sizing: border-box;
-  }
-  
-  .card {
-    float: left;
-    width: 33.3%;
-    padding: 8px;
-    border-radius:10px;
-  }
-  
-  
-  .price {
-    list-style-type: none;
-    border: 1px solid #eee;
-    margin: 0;
-    padding: 0;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-  }
-  
- 
-  .price .header {
-    background-color: #111;
-    color: white;
-    font-size: 25px;
-    font-weight: bolder;
-  }
-  
-  
-  .price li {
-    border-bottom: 1px solid #eee;
-    padding: 20px;
-    text-align: center;
-    
-  }
-  
-  
-  
-  
-  .price .grey {
-    background-color: #eee;
-    font-size: 30px;
-    font-weight:bolder;
-  }
-  .price .white {
-    background-color:transparent;
-    font-size: 20px;
-    color:white;
-  }
-  
-  .price:hover {
-    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
-     transform: scale(1.2);
-     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); background-size: 400% 400%; animation: gradient 15s ease infinite;
-     
-  
-     
-  }
-  
-  
-  
-  </style>
-  <div class="card">
-    <ul class="price">
-      <li class="header">B A S I C</li>
-      <li class="grey">INR 129/month</li>
-      <li class="white">TUTORIAL VIDEOS<span class="glyphicon glyphicon-ok" style="color:greenyellow"></li>
-      <li class="white">PERSONALISED MENTOR SUPPORT<span class="glyphicon glyphicon-ok" style="color:greenyellow"></li></li>
-      <li class="white">CELEBRITY TALKS</li>
-      <li class="white">AFTER COURSE CAREER SUPPORT</li>
-      <li class="grey"><button class="btn btn-md" style="background-color:black;color:white;font-weight:bolder">S U B S C R I B E</button></li>
-    </ul>
-  </div>
-  
-  <div class="card">
-    <ul class="price">
-      <li class="header">P L U S</li>
-      <li class="grey">INR 599/month</li>
-      <li class="white">TUTORIAL VIDEOS<span class="glyphicon glyphicon-ok" style="color:greenyellow"></li>
-      <li class="white">PERSONALISED MENTOR SUPPORT<span class="glyphicon glyphicon-ok" style="color:greenyellow"></li></li>
-      <li class="white">CELEBRITY TALKS<span class="glyphicon glyphicon-ok" style="color:greenyellow"></li></li>
-      <li class="white">AFTER COURSE CAREER SUPPORT</li>
-      
-     <li class="grey"><button class="btn btn-md" style="background-color:black;color:white;font-weight:bolder">S U B S C R I B E</button></li>
-     </ul>
-  </div>
-  
-  <div class="card">
-    <ul class="price">
-      <li class="header">P R E M I U M</span></li>
-      <li class="grey">INR 999/month</span></li>
-      <li class="white">TUTORIAL VIDEOS <span class="glyphicon glyphicon-ok" style="color:greenyellow"></li>
-      <li class="white">PERSONALISED MENTOR SUPPORT<span class="glyphicon glyphicon-ok" style="color:greenyellow"></span></li>
-      <li class="white">CELEBRITY TALKS<span class="glyphicon glyphicon-ok" style="color:greenyellow"></span></li>
-      <li class="white">AFTER COURSE CAREER SUPPORT<span class="glyphicon glyphicon-ok" style="color:greenyellow"></span></li>
-      <li class="grey"><button class="btn" style="background-color:black;color:white;font-weight:bolder">S U B S C R I B E</button></li>
-    </ul>
-  </div>
+    .name{
+      color:white;
+      background-color:rgb(52, 20, 104);
+      font-weight: bold;
+    }
+    .desc{
+      background-color: white;
+      color:black;
 
-</div>
-<hr>
-<div class="container-fluid">
-  <h1 align="center" style="color: white;"">[OUR TUTORS]</h1>
-</div>
+    }
+  </style>
+<div class=" card">
+
+      <ul class="price">
+        <li class="name">[ P R A B H U &nbspD E V A ]</li>
+        <li><img style="width:100%" class="img"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Promotional_rickshaw_race_for_%27Rowdy_Rathore%27_%2810%29.jpg/220px-Promotional_rickshaw_race_for_%27Rowdy_Rathore%27_%2810%29.jpg">
+        </li>
+        <li class="desc">
+          Prabhu Deva (born 3 April 1973) is an Indian dance choreographer, film director, producer and actor who has
+          worked predominantly in Tamil, Hindi, and Telugu language films. In a career spanning 32 years, he has
+          performed and designed a wide range of dancing styles and has garnered two National Film Awards for Best
+          Choreography. In 2019, he was awarded the Padma Shri for his contributions to dance<br><br>
+        </li>
+      </ul>
+  </div>
+  <div class=" card">
+
+    <ul class="price">
+      <li class="name">[ F A R A H &nbsp K H A N ]</li>
+      <li><img style="width:100%" class="img "
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Farah_Khan_at_the_opening_of_Fluke_store_11.jpg/220px-Farah_Khan_at_the_opening_of_Fluke_store_11.jpg">
+      </li>
+      <li class="desc">
+        Farah Khan Kunder (born 9 January 1965) is an Indian film director, film producer, actress, dancer and
+        choreographer who works predominantly in Hindi films. Khan has choreographed dance routines for more than a
+        hundred songs in over 80 films, winning six Filmfare Awards for Best Choreography and the National Film Award
+        for Best Choreography. <br><br><br>
+      </li>
+    </ul>
+  </div>
+  <div class=" card">
+
+    <ul class="price">
+      <li class="name">[ R E M O  &nbsp D' S O U Z A ]</li>
+      <li><img style="width:100%" class="img"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Remo_d_souza_did_final.jpg/220px-Remo_d_souza_did_final.jpg">
+      </li>
+      <li class="desc">
+        Remo D'souza studied in Jamnagar, Gujarat. He did his 12th from there and during his HSC board exam, he realized
+        that he didn't have any interest in studies. He immediately left school and went to Mumbai, but his father
+        wanted him to join the Indian Air Force.D'Souza is a choreographer in Bollywood films and music videos. He has
+        choreographed a number of films. Remo made his television debut with the dance reality show Dance India Dance
+        (DID)
+      </li>
+    </ul>
+  </div>
+  
 
 </body>
+
 </html>
