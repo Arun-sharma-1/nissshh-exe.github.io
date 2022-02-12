@@ -1,564 +1,73 @@
 <html>
-<head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
-  <link rel="icon" href="https://iconarchive.com/download/i43789/itzikgur/my-seven/Girls-Blue-Dress.ico"
-    type="image/icon type">
+  <head>
+    <link rel="stylesheet" type="text/css" href="tailwind.css" />
+    <link rel="stylesheet" type="text/css" href="daisyui.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <style>
+                  span {
+        position: relative;
+      }
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <script src="https://kit.fontawesome.com/19286165aa.js" crossorigin="anonymous"></script>
-  <title>
-    DanceLine
-  </title>
-  <script>
-    $(document).ready(function () {
-      $('[data-toggle="tooltip"]').tooltip();
-    });
-  </script>
-  <script>
-    $(document).ready(function () {
-      $('[data-toggle="popover"]').popover();
-    });
-  </script>
-  <style>
-    .affix {
-      top: 0;
-      width: 100%;
-      z-index: 9999 !important;
-    }
-.affix+.container-fluid {
-      padding-top: 0px;
- .fixed {
-        margin: 0;
-        padding: 0;
+      span::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
         width: 100%;
-        top: 0;
-        z-index: 101;
-        position: -webkit-sticky;
-        position: sticky;
+        height: 2px;
+        background-color: #fc2f70;
+        transform-origin: center;
+        transform: translate(-50%, 0) scaleX(0);
+        transition: transform 0.3s ease-in-out;
       }
 
-    }
-@keyframes gradient {
-      0% {
-        background-position: 0% 50%;
+      span:hover::before {
+        transform: translate(-50%, 0) scaleX(1);
       }
-
-      50% {
-        background-position: 100% 50%;
-      }
-
-      100% {
-        background-position: 0% 50%;
-      }
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-.card {
-      float: left;
-      width: 33.3%;
-      padding: 8px;
-      border-radius: 10px;
-    }
-.price {
-      list-style-type: none;
-      border: 1px solid #eee;
-      margin: 0;
-      padding: 0;
-      -webkit-transition: 0.3s;
-      transition: 0.3s;
-    }
-    .price .header {
-      background-color: #111;
-      color: white;
-      font-size: 25px;
-      font-weight: bolder;
-    }
-.price li {
-      border-bottom: 1px solid #eee;
-      padding: 20px;
-      text-align: center;
-    }
-.price .grey {
-      background-color: #eee;
-      font-size: 30px;
-      font-weight: bolder;
-    }
-.price .white {
-      background-color: transparent;
-      font-size: 20px;
-      color: white;
-    }
- .price:hover {
-      box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
-      transform: scale(1.2);
-      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-      background-size: 400% 400%;
-      animation: gradient 15s ease infinite;
-    }
-  </style>
-</head><body style="height:100%;width:100%;font-family: 'Inter', sans-serif; background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); background-size: 400% 400%; animation: gradient 15s ease infinite;">
-  <div class="container-fluid" style="padding-top: 0px;background-color: white;">
-    <h1 class="animate__animated animate__fadeIn" align="center">The following website is created for demonstration
-      purpose only and has no resemblance to true case. Every image used in this demonstration is
-      a property of respective owners </h1>
-  </div>
-<nav data-spy="affix" data-offset-top="197" class="navbar navbar-inverse "
-    style="background-color: rgb(12, 12, 12); color:white">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#"><strong>D A N C E L I N E</strong></a>
-        <img class="navbar-brand" src="https://www.nicepng.com/png/full/1-16687_star-png.png">
-      </div>
-      <div class="collapse navbar-collapse" id="topbar">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#"><b>A B O U T</b></a></li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><b>C A T E G O R I E S</b><span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#"><b>WESTERN</b></a></li>
-              <li><a href="#"><b>TRADITIONAL</b></a></li>
-           </ul>
-          </li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><b>Contact Us </b>
-              <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#"><span class="glyphicon glyphicon-earphone"></span>+91-7519874444</a></li>
-              <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> nissshh@icloud.com</a></li>
-              <li><a href="#"><span class="glyphicon glyphicon-send"></span> AS-006-0406, Pohra
-                  Mohalla,<br>Shahpur,Aurangabad,Bihar-824101,India</a></li> 
-                </ul>
-          </li>
-          <li><a href="#" data-toggle="tooltip" title="Please Login To View Your Profile" data-placement="bottom"><b>P R O F I L E</b></a></li>
-         </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#register" data-toggle="modal" data-target="#register"><span
-                class="glyphicon glyphicon-user"></span> <b>R E G I S T E R </b></a></li>
-          <li><a href="#login" data-toggle="modal" data-target="#login"><span class="glyphicon glyphicon-log-in"></span>
-              <b>L O G I N</b></a></li>
-            </ul>
-  </nav>
-  <div id="register" class="modal fade" role="dialog" style="background-color: transparent">
-    <div class="modal-dialog">
- <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title" align="center">REGISTER</h4>
-        </div>
-        <div class="modal-body">
-          <form class="form-horizontal">
-            <div class="form-group">
-              <label class="control-label col-sm-2" for="name">Name:</label>
-              <div class="col-sm-10">
-                <input type="text" class="form-control" id="name" placeholder="Enter Your Name">
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-sm-2" for="email">Email:</label>
-              <div class="col-sm-10">
-                <input type="email" class="form-control" id="email" placeholder="Enter email">
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-sm-2" for="phone"> Phone</label>
-              <div class="col-sm-10">
-                <input type="number" class="form-control" id="email" placeholder="Mobile Number">
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-sm-2" for="pwd">Password:</label>
-              <div class="col-sm-10">
-                <input type="password" class="form-control" id="pwd" placeholder="Enter password">
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-sm-2" for="pwd">Confirm Password:</label>
-              <div class="col-sm-10">
-                <input type="password" class="form-control" id="pwd" placeholder="Enter password Again">
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="col-sm-offset-2 col-sm-10">
-                <div class="checkbox">
-                  <label><input type="checkbox"> Accept Terms and Conditions </label>
-                </div>
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn"
-                  style="background-color: forestgreen;color: ghostwhite;">Register</button>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="login" class="modal fade" role="dialog" style="background-color: transparent;">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title" align="center">LOGIN</h4>
-        </div>
-        <div class="modal-body">
-          <form class="form-horizontal">
-            <div class="form-group">
-              <label for="email">Email address:</label>
-              <input type="email" class="form-control" id="email">
-            </div>
-            <div class="form-group">
-              <label for="pwd">Password:</label>
-              <input type="password" class="form-control" id="pwd">
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox"> Remember me</label>
-            </div>
-            <button type="submit" class="btn btn-success">Login</button>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div></div>
-  </div>
-  </div>
-  <div class=" container-fluid">
-    <div class=" table table-responsive"></div>
-    <table class="table table-responsive">
-      <tr>
-        <td align="left" style="width:20%">
-          <br>
-
-          <lottie-player src="https://assets7.lottiefiles.com/datafiles/40aX5db74VvGPWw/data.json"
-            background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
-        </td>
-        <td align="left" style="width:60%"><br><br><br><br>
-        <h1 class="animate__animated animate__slideinUp q" align="center" style="font-size: 600%;color:white">
-            <strong>D A N C E</strong><sup>line</sup></h1>
-        </td>
-        <td align="left" style="width:20%">
-          <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_qqtavvc0.json" background="transparent"
-            speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
-        </td>
-      </tr>
-    </table></div>
-  </div>
-  </div>
-  <div class="container">
-    <h3 class="animate__animated animate__fadeIn" align="center" style="color:white">Online Dance Academy </h3>
-  </div>
-
-  <div class="container-fluid" id="category">
-    <hr>
-    <h1 style="color:white"><span class="glyphicon glyphicon-film"></span>&nbspChoose Your Genre</h1><br>
-    <style>
-      .zoomt{
-        transform: scale(0.8);
-        filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-      }
-      .zoomt:hover{
-       ;
-        filter: none;
-    -webkit-filter: grayscale(0);
-    transition: 1s;
-    transform: scale(1.0)
-      }
+      
     </style>
-    <h2 style="color:white" align="center">[ W E S T E R N ]</h2><br>
-    <table class="table table-bordered table-responsive">
-      <tr>
-        <td class="zoom" align="center"><img style="width:100%" class="img zoomt"
-            src="https://global-uploads.webflow.com/5dbb40d6d8c97447e9450447/60baaab0aa12e6d6ad9074b6_STEEZY_HIPHOP-min.jpg"><br>
-          <p align="center" style="color:white"><b>H I P - H O P </b></p>
-        </td>
-        <td align="center"><img style="width:100%" class="img zoomt"
-            src="https://global-uploads.webflow.com/5dbb40d6d8c97447e9450447/60baaab0f8caa4145fe07fef_STEEZY_JAZZ-min.jpg">
-          <p align="center" style="color:white"><b>J A Z Z</b></p>
-        </td>
-        <td align="center"><img style="width:100%" class="img zoomt"
-            src="https://global-uploads.webflow.com/5dbb40d6d8c97447e9450447/60baaab004cd38de543dd7a1_STEEZY_BALLET-min.jpg">
-          <p align="center" style="color:white"><b>B A L L E T</b></p>
-        </td>
-        <td align="center"><img style="width:100%" class="img zoomt"
-            src="https://global-uploads.webflow.com/5dbb40d6d8c97447e9450447/60baaab0707f8ffece1e0ea3_STEEZY_POPPING-min.jpg">
-          <p align="center" style="color:white"><b>P O P P I N G</b></p>
-        </td>
-        <td align="center"><img style="width:100%" class="img zoomt"
-            src="https://global-uploads.webflow.com/5dbb40d6d8c97447e9450447/615e128e6cd629d07d38baf1_SALSA_CATEGORY_THUMB-min.jpg">
-          <p align="center" style="color:white"><b>S A L S A</b></p>
-        </td>
-        <td align="center"><img style="width:100%" class="img zoomt"
-            src="https://global-uploads.webflow.com/5dbb40d6d8c97447e9450447/60baaab0aa12e68aa29074b7_STEEZY_CONTEMP-min.jpg">
-          <p align="center" style="color:white"><b>C O N T E M P O R A R Y</b></p>
-        </td>
-      </tr>
-    </table>
-    <br>
-    <h2 style="color:white" align="center">[ C L A S S I C A L ]</h2><br>
-    <table class="table table-bordered table-responsive">
-      <tr>
-        <td class="zoom" align="center">
-          <p align="center" style="color:white;font-size:200%"><b>B H A R A T N A T Y A M </b></p>
-          <img style="width:100%; border: 3px solid white" class="img zoomt"
-            src="https://cdn.britannica.com/q:60/92/189592-050-5023ACF5/dancer-dance-natyam-Indian-Bharata.jpg"><br>
-          
-        </td>
-        <td align="center"><p align="center" style="color:white;font-size:200%"><b>K A T H A K A L I </b></p><img style="width:100%;border:3px solid white" class="img zoomt"
-            src="https://cdn.britannica.com/q:60/53/162553-050-38A6F40C/Dancer-performance-dance-India.jpg">
-          
-        </td>
-        <td align="center"><p align="center" style="color:white;font-size:200%"><b>O D I S S I</b></p><img style="width:100%;border:3px solid white" class="img zoomt"
-            src="https://cdn.britannica.com/q:60/89/162489-050-E1E1C90F/Dancer-Indian-odissi-dance.jpg">
-        </td>
-      </tr>
-    </table>
-  </div>
-  </div>
-  </div>
-  <div class="container">
-    <h1 align="center" style="color:white"><i class="fas fa-angle-double-right"></i> Choose a Subscription Plan As per
-      Your Choice <i class="fas fa-angle-double-left"></i></h1>
-    <hr>
-    <style>
-      * {
-        box-sizing: border-box;
-      }
+  </head>
+  <body style="background-color: #f9f8f2">
+    <div class="navbar bg-black text-neutral-content">
+      <div class="px-2 mx-2 navbar-start">
+        <i class="material-icons">desktop_mac</i>
+        &nbsp &nbsp
+        <span class="text-lg font-bold" id="logo"> &nbspLAP-MATE&nbsp </span>
+      </div>
+      <div class="navbar-center text-neutral-content">
+        <span class="text-lg font-bold"> &nbspexplore.&nbsp </span>
+        &nbsp&nbsp
+        <span class="text-lg font-bold"> &nbspabout.&nbsp </span>
+        &nbsp&nbsp
+        <span class="text-lg font-bold"> &nbspsupport.&nbsp </span>
+      </div>
+      <div class="navbar-end text-neutral-content"></div>
+      <div class="flex-none">
+        <div class="avatar">
+          <div class="rounded-full w-10 h-10 m-1">
+            <i class="material-icons" style="font-size: 37px">account_circle</i>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      .card {
-        float: left;
-        width: 33.3%;
-        padding: 8px;
-        border-radius: 10px;
-      }
-      .price {
-        list-style-type: none;
-        border: 1px solid #eee;
-        margin: 0;
-        padding: 0;
-        -webkit-transition: 0.3s;
-        transition: 0.3s;
-      }
-      .price .header {
-        background-color: #111;
-        color: white;
-        font-size: 25px;
-        font-weight: bolder;
-      }
-      .price li {
-        border-bottom: 1px solid #eee;
-        padding: 20px;
-        text-align: center;
-}
-.price .grey {
-        background-color: #eee;
-        font-size: 30px;
-        font-weight: bolder;
-      }
-.price .white {
-        background-color: transparent;
-        font-size: 20px;
-        color: white;
-      }
-.price:hover {
-        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
-        transform: scale(1.2);
-        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-        background-size: 400% 400%;
-        animation: gradient 15s ease infinite;
- }
-    </style>
-    <div class="card">
-      <ul class="price">
-        <li class="header">B A S I C</li>
-        <li class="grey">INR 129/month</li>
-        <li class="white">TUTORIAL VIDEOS<span class="glyphicon glyphicon-ok" style="color:greenyellow"></li>
-        <li class="white">PERSONALISED MENTOR SUPPORT<span class="glyphicon glyphicon-ok" style="color:greenyellow">
-        </li>
-        </li>
-        <li class="white">CELEBRITY TALKS</li>
-        <li class="white">AFTER COURSE CAREER SUPPORT</li>
-        <li class="grey"><button class="btn btn-md" style="background-color:black;color:white;font-weight:bolder">S U B
-            S C R I B E</button></li>
-      </ul>
-    </div>
-    <div class="card">
-      <ul class="price">
-        <li class="header">P L U S</li>
-        <li class="grey">INR 599/month</li>
-        <li class="white">TUTORIAL VIDEOS<span class="glyphicon glyphicon-ok" style="color:greenyellow"></li>
-        <li class="white">PERSONALISED MENTOR SUPPORT<span class="glyphicon glyphicon-ok" style="color:greenyellow">
-        </li>
-        </li>
-        <li class="white">CELEBRITY TALKS<span class="glyphicon glyphicon-ok" style="color:greenyellow"></li>
-        </li>
-        <li class="white">AFTER COURSE CAREER SUPPORT</li>
-
-        <li class="grey"><button class="btn btn-md" style="background-color:black;color:white;font-weight:bolder">S U B
-            S C R I B E</button></li>
-      </ul>
-    </div>
- <div class="card">
-      <ul class="price">
-        <li class="header">P R E M I U M</span></li>
-        <li class="grey">INR 999/month</span></li>
-        <li class="white">TUTORIAL VIDEOS <span class="glyphicon glyphicon-ok" style="color:greenyellow"></li>
-        <li class="white">PERSONALISED MENTOR SUPPORT<span class="glyphicon glyphicon-ok"
-            style="color:greenyellow"></span></li>
-        <li class="white">CELEBRITY TALKS<span class="glyphicon glyphicon-ok" style="color:greenyellow"></span></li>
-        <li class="white">AFTER COURSE CAREER SUPPORT<span class="glyphicon glyphicon-ok"
-            style="color:greenyellow"></span></li>
-        <li class="grey"><button class="btn" style="background-color:black;color:white;font-weight:bolder">S U B S C R I
-            B E</button></li>
-      </ul>
-    </div>
-</div>
-  <br>
-  <div class="container">
-    <h1 align="center" style="color: white;"">[OUR TUTORS]</h1>
-  <hr width="100%">
-  <style>
-    .name{
-      color:white;
-      background-color:rgb(52, 20, 104);
-      font-weight: bold;
-    }
-    .desc{
-      background-color: white;
-      color:black;
-
-    }
-  </style>
-<div class=" card">
-<ul class="price">
-        <li class="name">[ P R A B H U &nbspD E V A ]</li>
-        <li><img style="width:100%" class="img"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Promotional_rickshaw_race_for_%27Rowdy_Rathore%27_%2810%29.jpg/220px-Promotional_rickshaw_race_for_%27Rowdy_Rathore%27_%2810%29.jpg">
-        </li>
-        <li class="desc">
-          Prabhu Deva (born 3 April 1973) is an Indian dance choreographer, film director, producer and actor who has
-          worked predominantly in Tamil, Hindi, and Telugu language films. In a career spanning 32 years, he has
-          performed and designed a wide range of dancing styles and has garnered two National Film Awards for Best
-          Choreography. In 2019, he was awarded the Padma Shri for his contributions to dance<br><br>
-        </li>
-      </ul>
-  </div>
-  <div class=" card">
-<ul class="price">
-      <li class="name">[ F A R A H &nbsp K H A N ]</li>
-      <li><img style="width:100%" class="img "
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Farah_Khan_at_the_opening_of_Fluke_store_11.jpg/220px-Farah_Khan_at_the_opening_of_Fluke_store_11.jpg">
-      </li>
-      <li class="desc">
-        Farah Khan Kunder (born 9 January 1965) is an Indian film director, film producer, actress, dancer and
-        choreographer who works predominantly in Hindi films. Khan has choreographed dance routines for more than a
-        hundred songs in over 80 films, winning six Filmfare Awards for Best Choreography and the National Film Award
-        for Best Choreography. <br><br><br>
-      </li>
-    </ul>
-  </div>
-  <div class=" card">
-<ul class="price">
-      <li class="name">[ R E M O  &nbsp D' S O U Z A ] <span class="badge">NEW</span></li>
-      <li><img style="width:100%" class="img"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Remo_d_souza_did_final.jpg/220px-Remo_d_souza_did_final.jpg">
-      </li>
-      <li class="desc">
-        Remo D'souza studied in Jamnagar, Gujarat. He did his 12th from there and during his HSC board exam, he realized
-        that he didn't have any interest in studies. He immediately left school and went to Mumbai, but his father
-        wanted him to join the Indian Air Force.D'Souza is a choreographer in Bollywood films and music videos. He has
-        choreographed a number of films. Remo made his television debut with the dance reality show Dance India Dance
-        (DID)
-      </li>
-    </ul>
-  </div>
- </div>
- <hr>
- <div class="container-fluid">
-  <div id="seminar" class="carousel slide" data-ride="carousel">
- <ol class="carousel-indicators">
-      <li data-target="#seminar" data-slide-to="0" class="active"></li>
-      <li data-target="#seminar" data-slide-to="1"></li>
-      <li data-target="#seminar" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="item active">
-        <img src="https://i.ibb.co/ydz2w8S/JOIN-Our-online-seminar.png" style="width: 100%;" >
+    <div
+      class="flex items-center w-full px-4 py-10 bg-cover card bg-base-200"
+      style="background-image: url(bg.PNG)"
+    >
+      <div class="card glass lg:card-side text-neutral-content">
+        <div class="max-w-lg justify-end card-body">
+          <h2 class="card-title">
+            WANT TO OWN A LAPTOP BUT DONT WANT TO BUY ONE
+          </h2>
+          <div class="card-actions">
+            <button class="btn glass rounded-full">GET STARTED</button>
+          </div>
+        </div>
       </div>
-  
-      <div class="item">
-        <img src="https://i.ibb.co/SyqMgc6/JOIN-Our-online-seminar-1.png" style="width: 100%;">
-      </div>
-  
-      <div class="item">
-        <img src="https://i.ibb.co/d0NjBvM/JOIN-Our-online-seminar-2.png" style="width: 100%;" >
-      </div>
-    </div><a class="left carousel-control" href="#seminar" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#seminar" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-   </div>
-<div class="container-fluid"><br><br>
- <table  style="margin-left: 250px;">
-    <tr>
-      <td><lottie-player src="https://assets1.lottiefiles.com/packages/lf20_18N5Dm.json"  background="transparent"  speed="1"  style="width: 600px; height: 600px;"    autoplay></lottie-player></td>
-      <td> <h1 style="color: white;font-size: 600%;"><strong>~ 18000 Students have been certified so far<br>and still growing</strong></h1></td>
-    </tr>
-    <tr>
-      <td><h1 style="color: white;font-size: 600%;"><strong>More than 1000 Aluminis have been awarded globally and still growing</strong></h1></td>
-      <td><lottie-player src="https://assets5.lottiefiles.com/packages/lf20_gay13id1.json"  background="transparent"  speed="1"  style="width: 600; height: 600;"  loop  autoplay></lottie-player></td>
-    </tr>
-  </table>
-</div>
-<br>
-<div class="container" style="color:white">
-  <h3 align="center">Subscribe to our Weekly newsletter</h3><br>
-  <form class="form-inline text-center">
-    <div class="form-group">
-      <label for="email" ">Email address:</label>
-        <input type=" email" class="form-control" id="email" style="text-align: center;font-weight: bold;>
-      </div>
-       <div class=" checkbox">
-        <label><input type="checkbox">Accept Term and Conditions</label>
     </div>
-    <button type="submit" class="btn btn-default"
-      style="background-color: rgb(8, 8, 8);color: white;font-weight: bolder;">Subscribe</button>
-  </form>
-</div>
-</div>
-<div class="container">
-  <h1 style="color:white" align="center">Hurry Up! The Seats are filling fast</h1>
-  <div class="progress">
-    <div class="progress-bar progress-bar-striped active" role="progressbar"
-    aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:76%;background-color: black;">
-     <strong>76/100 Filled Already</strong>
-    </div>
-  </div>
-</div>
-</body>
+  </body>
 </html>
