@@ -1,0 +1,78 @@
+@font-face{
+    font-family: head;
+    src:url(../assets/DIN.ttf);
+}
+@font-face {
+    font-family: desc;
+    src: url(../assets/tungsten.ttf);
+}
+body{
+    background-color: #ece8e1;
+    font-family: head;
+    font-weight: bold;
+    height:100%;
+    margin: 0;
+}
+header{
+    margin-bottom:0;
+    background-color: #ff4655;
+    padding: 1em;
+    z-index: 20;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 2em);
+    a{
+        text-decoration: none;
+        color: #000000;
+    }
+    a.logo{
+        font-family: desc;
+        text-transform: uppercase;
+        font-size: 2em;
+    }
+    
+    nav ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        li a{
+            padding: 1em;
+            margin: 0.05em;
+            flex-direction: right;
+        }
+        
+    }
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: auto;
+
+    section {
+        padding:2em;
+        h1,h2{
+            text-transform: uppercase;
+            font-family: desc;
+            color:#c71423;
+            font-size: 4em;
+            letter-spacing:5px;
+
+        }
+        
+    }
+    .down{
+        text-decoration: none;
+        color: #000000;
+        padding: 1em;
+        font-weight: 2em;
+        right: 0;
+        position: fixed;
+        border: 1px solid #ff4655;
+        border-radius:1em;
+        
+        
+    }
+}
+
