@@ -27,6 +27,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: calc(100% - 2em);
+  border-bottom: 5px solid #161515;
 }
 
 header a {
@@ -38,6 +39,10 @@ header a.logo {
   font-family: desc;
   text-transform: uppercase;
   font-size: 2em;
+}
+
+header a span:hover {
+  color: #ffffff;
 }
 
 header nav ul {
@@ -55,10 +60,7 @@ header nav ul {
 header nav ul li a {
   padding: 1em;
   margin: 0.05em;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: right;
-          flex-direction: right;
+  background-attachment: fixed;
 }
 
 .wrapper {
@@ -76,7 +78,7 @@ header nav ul li a {
   text-transform: uppercase;
   font-family: desc;
   color: #c71423;
-  font-size: 4em;
+  font-size: 3.5em;
   letter-spacing: 5px;
 }
 
