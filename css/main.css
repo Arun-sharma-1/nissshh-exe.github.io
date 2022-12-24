@@ -89,3 +89,31 @@ header nav ul li a {
           justify-content: center;
 }
 /*# sourceMappingURL=main.css.map */
+svg {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  --s: 1s;
+}
+
+svg .anim > * {
+  animation: StrokeAnim var(--s) linear forwards reverse;
+}
+
+svg .anim > *:nth-child(1) {
+  transform-origin: center center;
+  transform: rotate(-90deg) scaleY(-1);
+}
+svg .anim > *:nth-child(2) {
+  animation-delay: var(--s);
+  transform-origin: center center;
+  transform: rotate(-90deg);
+}
+svg .anim > *:nth-child(3) {
+  animation-delay: calc(var(--s) * 2);
+}
+
+@keyframes StrokeAnim {
+  from {stroke-dashoffset: 0;}
+}
