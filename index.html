@@ -8,6 +8,172 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Roboto Mono', monospace; 
+}
+@font-face {
+    font-family: 'ver';
+    src: url(/assets/Vercetti.ttf);
+}
+body {
+    background-color: #000000;
+
+}
+.panel{
+    background-image: url(/assets/images/background.jpg);
+    background-size: cover;
+}
+/* Header styling */
+header {
+    background-color:#c63940;
+    color: white;
+    border-bottom: 1px dashed #c63940;
+    padding: 10px 0;
+    position: sticky;
+    width:75%;
+    margin-left: 25%;
+}
+
+nav {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Left side of the navbar */
+.left {
+    display: flexbox;
+    align-items:start;
+}
+
+.datetime {
+    color: #fdfcfc;
+    margin-right: 20px;
+}
+
+/* Center of the navbar */
+.center {
+    font-size: 1.2rem;
+    color: #faf8f8;
+}
+
+/* Right side of the navbar */
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.contact,
+.connect {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+.contact:hover,
+.connect:hover {
+    color: #C63940;
+    background-color: white;
+}
+
+/* Content area */
+.content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+.hero {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    
+    border-bottom: 1px dashed #C63940;
+}
+
+.left-subsection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+}
+
+.right-subsection {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px dashed #C63940;
+    background-image: url(/assets/images/background.jpg);
+    background-size: cover;
+}
+
+/* Hero title styling */
+.hero-title {
+    font-size: 550%;
+    margin-bottom: 10px;
+    margin-left: 20%;
+    font-family: 'ver';
+    
+}
+
+/* Hero subtitle styling */
+.hero-subtitle {
+    font-size: 200%;
+    text-align: center;
+    margin-left: 30%;
+}
+
+/* Image styling */
+img {
+    position: relative;
+    height: 540px;
+    margin-bottom: 0;
+}
+
+marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    color: #C63940;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 500%;
+    border-bottom: 1px dashed #C63940;
+}
+.github{
+    position:fixed;
+    top:50%;
+    left:10px;
+    padding:0px;
+    margin:0px;
+  }
+
+  .scroll{
+    position:fixed;
+    left:25px;
+    top: 70%;
+    z-index: 999;
+    background-color: #000000;
+  }
+.scroll img{
+    width: 60px;
+    height: 60px;
+    background-color: #000000;
+}
+    </style>
 </head>
 <body>
     <div class="panel">
