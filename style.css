@@ -162,3 +162,41 @@ marquee {
     height: 60px;
     background-color: #000000;
 }
+/* Default styles for larger screens */
+/* ... (your existing CSS code) ... */
+
+/* Media query for screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    /* Adjust other styles for smaller screens */
+    /* For example, you can make the header width 100% */
+    header {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    /* You can adjust other styles here as needed */
+}
+
+/* Media query for screens with a maximum width of 480px */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    /* Adjust other styles for even smaller screens */
+    /* For example, you can make the header font-size smaller */
+    header {
+        font-size: 0.5%;
+    }
+    .hero{
+        display: block;
+    }
+    .github,.scroll{
+        display:none;
+    }
+    /* You can adjust other styles here as needed */
+}
