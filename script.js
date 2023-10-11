@@ -1,5 +1,6 @@
 // JavaScript for displaying dynamic date and time
 console.log("Script Loaded");
+console.log("PANDA");
 function updateDateTime() {
     const dateTimeElement = document.querySelector('.datetime');
     const now = new Date();
